@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <group android:id="@+id/initialGroup">
+        <item
+            android:id="@+id/action_home"
+            android:orderInCategory="50"
+            android:title="@string/home"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/action_simulate"
+            android:orderInCategory="100"
+            android:title="@string/start_route"
+            app:showAsAction="never" />
+    </group>
+
+    <group android:id="@+id/simulationGroup">
+        <item
+            android:id="@+id/action_pause"
+            android:orderInCategory="400"
+            android:title="@string/pause_route"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/action_terminate"
+            android:orderInCategory="500"
+            android:title="@string/stop_route"
+            app:showAsAction="never" />
+    </group>
+
+    <group android:id="@+id/restartGroup">
+        <item
+            android:id="@+id/action_restart"
+            android:orderInCategory="600"
+            android:title="@string/restart_route"
+            app:showAsAction="never" />
+    </group>
+</menu>
